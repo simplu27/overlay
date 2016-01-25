@@ -79,6 +79,7 @@ h1, h2, h3, h4 {
 
 
 .section {
+	background-color: rgba(30, 50, 70, 0.9);
 	background-image: url("../images/home-intro2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -92,7 +93,7 @@ h1, h2, h3, h4 {
 
 #top-menu {
 	display: block;
-	background: rgba(30, 50, 70, .8);
+	background: rgba(30, 50, 70, .9);
 	position: fixed;
 	z-index: 99;
 	width: 100%;
@@ -101,6 +102,33 @@ h1, h2, h3, h4 {
 	padding: 0 20px;
 }
 
+#header {
+	display: block;
+	max-width: 800px;
+	margin: 0 auto;
+	height: auto;
+	position: relative;
+}
+
+#top-menu .logo {
+	display: inline-block;
+	float: left;
+}
+
+	.logo a {
+		text-decoration: none;
+		padding: 8px 0;
+		display: block;
+		font-weight: bold;
+		color: #EFF7FF;
+		font-size: 24px;
+		transition: all .5s;
+	}
+
+	.logo a:hover {
+		color: #BFDFFF;
+	}
+
 #top-menu ul,
 #top-menu li {
 	margin: 0;
@@ -108,11 +136,11 @@ h1, h2, h3, h4 {
 }
 
 .menu {
-	display: block;
+	/*display: block;
 	max-width: 800px;
 	margin: 0 auto;
 	height: auto;
-	position: relative;
+	position: relative;*/
 }
 
 .menu ul {
@@ -130,11 +158,12 @@ h1, h2, h3, h4 {
 	display: block;
 	text-decoration: none;
 	opacity: .9;
+	transition: all .5s;
 }
 
 .menu a:hover {
 	opacity: 1;
-	background: rgba(30, 50, 70, 1);
+	background: #1F2F3F;
 }
 
 
@@ -148,7 +177,11 @@ h1, h2, h3, h4 {
 	bottom: 0px;
 }
 
-.grid-70 {background-image: url("img/grid-70.png"); z-index: 2;}
+.grid-70 {
+	background-color: rgba(30, 50, 70, 0.3);
+	background-image: url("img/grid-70.png");
+	z-index: 2;
+}
 
 .center {
 	max-width: 800px;
@@ -190,7 +223,7 @@ h1, h2, h3, h4 {
 
 .black {
 	width: 100%;
-	background: rgba(30, 50, 70, .8);
+	background: rgba(30, 50, 70, .9);
 	color: #FFF;
 	padding: 40px 0;
 }
